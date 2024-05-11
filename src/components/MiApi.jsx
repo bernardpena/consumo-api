@@ -44,14 +44,14 @@ const MiApi = () => {
             <div className='table-responsive'>
                 <table className='table table-fixed table-striped table-hover mt-5 shadow-lg' >
                     <thead>
-                        <tr className='bg-curso text-white'>
+                        {/* <tr className='bg-curso text-white'>
                             <th>Farmacia</th>
                             <th>Comuna</th>
                             <th>Dirección</th>
                             <th>Teléfono</th>
                             <th>Hora Apertura</th>
                             <th>Hora Cierra</th>
-                        </tr>
+                        </tr> */}
                     </thead>
                     {/* <tbody>
                     
