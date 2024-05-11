@@ -4,7 +4,7 @@ import Buscador from './Buscador'
 const MiApi = () => {
  //setear los Hooks useState
  const [users, setUsers] = useState([]);
- const [search, setSearch] = useState("");
+//  const [search, setSearch] = useState("");
 
  //funcion para traer los datos
  const URL = 'https://midas.minsal.cl/farmacia_v2/WS/getLocales.php'
@@ -37,14 +37,8 @@ users.sort(function(a,b){
     return (
         //renderizamos la vistas
         <div>
-            <Buscador/>
-            {/* <input type="text"
-                placeholder='Búsqueda por Ciudad'
-                className='form-control'
-                value={search}
-                onChange={searcher} /> */}
-
-            {/* <table className='table table-striped table-hover mt-5 shadow-lg' >
+            <Buscador />
+            <table className='table table-fixed table-striped table-hover mt-5 shadow-lg' >
                 <thead>
                     <tr className='bg-curso text-white'>
                         <th>Farmacia</th>
@@ -55,7 +49,7 @@ users.sort(function(a,b){
                         <th>Hora Cierra</th>
                     </tr>
                 </thead>
-                <tbody>
+                {/* <tbody>
                     
                     {results.map((user) => (
                         <tr key={user.local_id}>
@@ -67,8 +61,10 @@ users.sort(function(a,b){
                             <td>{user.funcionamiento_hora_cierre}</td>
                         </tr>
                     ))}
-                </tbody>
-            </table> */}
+                </tbody> */}
+            </table>
+           
+
         </div>
     )
 }

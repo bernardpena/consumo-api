@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Buscador.css'
 
 const Buscador = () => {
     //setear los Hooks useState
@@ -42,7 +43,7 @@ const Buscador = () => {
                 value={search}
                 onChange={searcher} />
 
-            <table className='table table-striped table-hover mt-5 shadow-lg' >
+            <table className='table table-fixed table-striped table-hover mt-5 shadow-lg' >
                 <thead>
                     <tr className='bg-curso text-white'>
                         <th>Farmacia</th>
@@ -54,7 +55,6 @@ const Buscador = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {/* {users.map((user) => ( */}
                     {results.map((user) => (
                         <tr key={user.local_id}>
                             <td>{user.local_nombre}</td>
