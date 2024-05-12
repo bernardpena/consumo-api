@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import './Buscador.css'
 
+
 const Buscador = () => {
+
     //setear los Hooks useState
     const [users, setUsers] = useState([]);
     const [search, setSearch] = useState("");
 
     //función para traer los datos
     const URL = 'https://midas.minsal.cl/farmacia_v2/WS/getLocales.php'
-
+    console.log(URL)
     const showData = async () => {
         const response = await fetch(URL)
         const data = await response.json();

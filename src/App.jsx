@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid">
-        <h2 className='text-center' >Farmacias de Turno</h2>
+        <h2 className='text-center' >Farmacias de Chile</h2>
         <MiApi />
       </div>
     </div>
